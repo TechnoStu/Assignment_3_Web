@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reservation request</title>
+
+<style>
+        
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Take up full height of viewport */
+}
+form {
+    width: 600px;
+    border: 5px solid fuchsia;
+    padding: 10px 20px;
+}
+fieldset {
+margin-top: 1em;
+margin-bottom: 1em;
+padding: .5em;
+}
+legend {
+color: blue;
+font-weight: bold;
+font-size: 85%;
+margin-bottom: .5em;
+}
+label {
+float: left;
+width: 90px;
+}
+input, select {
+margin-left: 1em;
+margin-right: 1em;
+margin-bottom: .5em;
+}
+input {
+width: 14em;
+}
+input.left {
+width: 1em;
+padding-left: 0;
+}
+p {
+margin-top: 0;
+margin-bottom: .5em;
+}
+input.last {
+margin-bottom: 1em;
+}
+#adults, #children {
+width: 35px;
+}
+#smoking {
+width: 1em;
+margin-left: 0;
+}
+#submit {
+margin-left: 0;
+width: 10em;
+}
+span {
+color: red;
+}
+#footer {
+      margin-top: 30px;
+      text-align: left;
+      
+    }
+    </style>
+</head>
+    <body>
+        <form>
+    <h1>Reservation Request</h1>
+<fieldset>
+<legend>General Information</legend>
+<label for="arrival_date">Arrival date:</label>
+<input type="text" name="arrival_date" id="arrival_date" autofocus>
+<span>*</span><br>
+<label for="nights">Nights:</label>
+<input type="text" name="nights" id="nights">
+<span>*</span><br>
+<label>Adults:</label>
+<select name="adults" id="adults">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select><br>
+<label>Children:</label>
+<select name="children" id="children">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select><br>
+</fieldset>
+<fieldset>
+<legend>Preferences</legend>
+<label>Room type:</label>
+<input type="radio" name="room" id="standard" class="left" checked>Standard&nbsp;&nbsp;&nbsp;
+<input type="radio" name="room" id="business" class="left">Business&nbsp;&nbsp;&nbsp;
+<input type="radio" name="room" id="suite" class="left last">Suite<br>
+<label>Bed type:</label>
+<input type="radio" name="bed" id="king" class="left" checked>King&nbsp;&nbsp;&nbsp;
+<input type="radio" name="bed" id="double" class="left last">Double Double<br>
+<input type="checkbox" name="smoking" id="smoking">Smoking<br>
+</fieldset>
+<fieldset>
+<legend>Contact Information</legend>
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+<span>*</span><br>
+<label for="email">Email:</label>
+<input type="text" name="email" id="email">
+<span>*</span><br>
+<label for="phone">Phone:</label>
+<input type="text" name="phone" id="phone" placeholder="999-999-9999">
+<span>*</span><br>
+</fieldset>
+
+<input type="submit" id="submit" value="Submit Request"><br>
+<footer id="footer">
+    <p>&copy; "NISHA / N01656519" 2023</p>
+  </footer>
+</form>
+<script src="/js/script4.js"></script>
+</body>
+</html>
+
+
+
+
+
+

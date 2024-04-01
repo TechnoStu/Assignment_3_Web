@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federal Income Tax Calculator</title>
+</head>
+<body>
+    <style>
+        body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    #form-container {
+      border: 5px solid fuchsia;
+      padding: 20px;
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+      height:auto;
+      width:500px;
+     }
+     .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+     h1{
+        color:blue;
+     }
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    
+}
+
+#footer {
+      margin-top: 30px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+      text-align: left;
+      
+    }
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-left: 30px;
+    }
+
+
+      </style>
+    <div id="form-container">
+  <h1>Income Tax Calculator</h1>
+  <div class="form-row">
+  <label for="incomeInput">Enter taxable income:</label>
+  <input type="text" id="incomeInput"> 
+  <button id="calculateButton">Calculate</button>
+  <br></div>
+  <div class="form-row">
+  <label for="taxOutput">Income Tax Owed:</label>
+  <input type="text" id="taxOutput" readonly><br>
+  </div>
+
+  <footer id="footer">
+    <p>&copy; "NISHA / N01656519" 2023</p>
+  </footer>
+    </div>
+  <script src="/js/script3.js"></script>
+</body>
+</html>
